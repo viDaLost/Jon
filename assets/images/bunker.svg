@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Подземный бункер Норд-7">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a211b"/><stop offset=".45" stop-color="#18120f"/><stop offset="1" stop-color="#0f0b09"/></linearGradient>
+    <linearGradient id="earth" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#59402d"/><stop offset=".55" stop-color="#32231b"/><stop offset="1" stop-color="#15100d"/></linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#75665a"/><stop offset=".42" stop-color="#3f372f"/><stop offset="1" stop-color="#171310"/></linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd891"/><stop offset="1" stop-color="#c87b32"/></linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="55%"><stop offset="0" stop-color="#f0ba64" stop-opacity=".36"/><stop offset="1" stop-color="#f0ba64" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".5"/></filter>
+    <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .16"/></feComponentTransfer></filter>
+  </defs>
+  <rect width="1200" height="760" fill="url(#sky)"/>
+  <circle cx="286" cy="162" r="260" fill="url(#glow)"/>
+  <path d="M0 244 C98 202 161 251 276 222 C425 184 483 250 613 219 C742 188 815 228 932 209 C1048 190 1126 209 1200 173 L1200 760 L0 760 Z" fill="url(#earth)"/>
+  <path d="M0 278 C160 239 250 308 379 267 C534 217 675 286 810 246 C954 203 1047 239 1200 214 L1200 760 L0 760 Z" fill="#201711" opacity=".72"/>
+  <g opacity=".26" stroke="#d29a5f" stroke-width="2" fill="none">
+    <path d="M50 326 C190 302 241 350 363 322 C482 294 571 324 684 305 C815 283 889 314 1058 286"/>
+    <path d="M22 402 C164 378 260 424 396 395 C529 367 639 392 782 371 C917 351 1032 361 1170 334"/>
+    <path d="M92 509 C267 478 376 532 522 502 C648 476 756 505 900 477 C1017 454 1097 461 1190 442"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M180 382 Q600 248 1020 382 L1044 625 Q600 716 156 625 Z" fill="#171310" stroke="#8f765e" stroke-width="8"/>
+    <path d="M218 402 Q600 289 982 402 L997 592 Q600 665 203 592 Z" fill="#2b211b" stroke="#4f4337" stroke-width="6"/>
+    <path d="M250 418 Q600 319 950 418 L957 569 Q600 626 243 569 Z" fill="#1b1512"/>
+    <g stroke="#56483d" stroke-width="8">
+      <path d="M382 384 L382 612"/><path d="M600 335 L600 628"/><path d="M818 384 L818 612"/>
+      <path d="M246 488 L956 488"/>
+    </g>
+    <g>
+      <rect x="270" y="420" width="88" height="54" rx="12" fill="#3b312a" stroke="#846b52"/>
+      <rect x="405" y="386" width="150" height="82" rx="16" fill="#312720" stroke="#6f5a45"/>
+      <rect x="645" y="386" width="150" height="82" rx="16" fill="#312720" stroke="#6f5a45"/>
+      <rect x="842" y="420" width="88" height="54" rx="12" fill="#3b312a" stroke="#846b52"/>
+      <rect x="278" y="518" width="126" height="48" rx="14" fill="#2f261f" stroke="#6e5843"/>
+      <rect x="433" y="515" width="125" height="57" rx="14" fill="#3a2d23" stroke="#80654b"/>
+      <rect x="642" y="515" width="125" height="57" rx="14" fill="#3a2d23" stroke="#80654b"/>
+      <rect x="796" y="518" width="126" height="48" rx="14" fill="#2f261f" stroke="#6e5843"/>
+    </g>
+    <g opacity=".95">
+      <circle cx="479" cy="425" r="11" fill="#f2c471"/><circle cx="720" cy="425" r="11" fill="#74b9dd"/><circle cx="314" cy="447" r="8" fill="#71d199"/><circle cx="886" cy="447" r="8" fill="#ee6e5e"/>
+      <path d="M494 427 H542" stroke="#f2c471" stroke-width="6" stroke-linecap="round"/><path d="M658 427 H706" stroke="#74b9dd" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g fill="url(#warm)" opacity=".84">
+      <path d="M558 318 L642 318 L632 346 L568 346 Z"/>
+      <rect x="578" y="294" width="44" height="38" rx="12"/>
+      <path d="M572 294 Q600 259 628 294" fill="none" stroke="#f4c57c" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g stroke="#9f7f5d" stroke-width="4" opacity=".55">
+      <path d="M206 623 C332 654 462 667 600 667 C738 667 868 654 994 623" fill="none"/>
+      <path d="M218 403 C338 437 465 452 600 452 C735 452 862 437 982 403" fill="none"/>
+    </g>
+  </g>
+  <g opacity=".15" filter="url(#noise)"><rect width="1200" height="760" fill="#fff"/></g>
+</svg>
